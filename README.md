@@ -4,14 +4,32 @@ Sentiment analysis using Machine Learning models (BERT, LightGBM, Logistic Regre
 # Summary
 
 ## Metrics
+The BERT model outperform significantly the LightGBM and Logistic Regression models (Accuracy of ~0.70 vs ~0.65). However, all models 
 
 ### Logistic Regression
 | Métrica | Train | Test | Dublin dataset |
 | ----- | --- | ----- |  ----- |
-| Accuracy | Lunes | 22/0/2018 | 22/0/2018 |
-| f1 | Martes | 23/0/2018 | 22/0/2018 |
-| recall | Miércoles | 24/0/2018 | 22/0/2018 |
-| precision | Viernes | 26/0/2018 | 22/0/2018 |
+| Accuracy | 0.770 | 0.811 | 0.653 |
+| f1 | 0.78 | 0.82 | 0.61 |
+| recall | 0.80 | 0.85 | 0.55 |
+| precision | 0.76 | 0.79 | 0.69 |
+
+### LightGBM Regression
+| Métrica | Train | Test | Dublin dataset |
+| ----- | --- | ----- |  ----- |
+| Accuracy | 0.757 | 0.708 | 0.644 |
+| f1 | 0.77 | 0.74 | 0.68 |
+| recall | 0.82 | 0.84 | 0.75 |
+| precision | 0.73 | 0.67 | 0.62 |
+
+### BERT
+| Métrica | Train | Test | Dublin dataset |
+| ----- | --- | ----- |  ----- |
+| Accuracy | 0.869 | 0.841 | 0.692 |
+| f1 | 0.87 | 0.85 | 0.70 |
+| recall | 0.88 | 0.87 | 0.71 |
+| precision | 0.86 | 0.83 | 0.69 |
+
 
 
 
@@ -25,7 +43,7 @@ Sentiment analysis using Machine Learning models (BERT, LightGBM, Logistic Regre
 
 > ### MODEL
 1.   Try novel architectures like GPT3
-2.   Train with complete dataset
+2.   Train with complete dataset in both BERT and LightGBM
 3.   Add early stopping in training
 
 > ### SOFTWARE
