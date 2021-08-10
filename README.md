@@ -62,19 +62,19 @@ In the dublin dataset top TFIDF words are related with public institutions and c
 
 
 
-> ## TODO
+> ## Next steps
 > ### DATA
-1.   In-depth Exploration Data Analysis to get a better understand of text
-2.   Analyze in detail model errors on dublin dataset
-3.   Find a better dataset to fine tune BERT
-4.   Create new variables from raw text (i.e. number of words, capital letter, emoticons, etc)
+1.   In-depth Exploration Data Analysis to get a better understand of text.
+2.   Analyze in detail model errors on dublin dataset.
+3.   Find a better dataset to fine tune BERT.
+4.   Create new variables from raw text (i.e. number of words, capital letter, emoticons, etc).
 5.   Use NER model to extract entities and analyze model performance. Generate new features based in these entities extracted.
-6.   Improve data cleaning and preprocessing for Logistic Regression and LightGBM(stopwords, lematization)
+6.   Improve data cleaning and preprocessing for Logistic Regression and LightGBM(stopwords, lematization).
 
 > ### MODEL
-1.   Try novel architectures like GPT3
-2.   Train with complete dataset in both BERT and LightGBM
-3.   Add early stopping in training
+1.   Try novel architectures like GPT3.
+2.   Train with complete dataset in both BERT and LightGBM.
+3.   Add early stopping in training.
 
 > ### SOFTWARE
 1.   Define a requirement with libraries versions to version problem. Ideally, create a docker file to solve operative system incompatibilities.
