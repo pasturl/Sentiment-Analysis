@@ -4,7 +4,12 @@ Sentiment analysis using Machine Learning models (BERT, LightGBM, Logistic Regre
 # Summary
 
 ## Metrics
-The BERT model outperform significantly the LightGBM and Logistic Regression models (Accuracy of ~0.70 vs ~0.65). However, all models have worst performance in the dublin dataset compare to the test set in sentiment140 dataset. This indicate that text in dublin dataset is somehow different. Looking to the words with higher TFIDF value (notebook 00_Logistic regression)
+The BERT model outperform significantly the LightGBM and Logistic Regression models (Accuracy of ~0.70 vs ~0.65). However, all models have worst performance in the dublin dataset compare to the test set in sentiment140 dataset. This indicate that text in dublin dataset is somehow different. Looking to the words with higher TFIDF values (notebook 00_Logistic regression) we can see that in sentiment140 dataset the top word are:
+* Positive common words: good, love, great, awesome, lol
+* Negative common words: hate, suck, shit.
+* Personalities, commercial names, places: Lebron, Obama, Peloshi, kindle2, stanford, North Korea, Iran.
+
+In the dublin dataset top TFIDF words are related with public institutions and city topics (government, dubcitycouncil, people, community, homeless). The top words are much more topic specific that in the sentiment140 dataset.
 
 ### Logistic Regression
 | Métrica | Train | Test | Dublin dataset |
@@ -17,10 +22,10 @@ The BERT model outperform significantly the LightGBM and Logistic Regression mod
 ### LightGBM Regression
 | Métrica | Train | Test | Dublin dataset |
 | ----- | --- | ----- |  ----- |
-| Accuracy | 0.757 | 0.708 | 0.644 |
-| f1 | 0.77 | 0.74 | 0.68 |
-| recall | 0.82 | 0.84 | 0.75 |
-| precision | 0.73 | 0.67 | 0.62 |
+| Accuracy | 0.795 | 0.783 | 0.63 |
+| f1 | 0.80 | 0.80 | 0.62 |
+| recall | 0.83 | 0.85 | 0.61 |
+| precision | 0.78 | 0.75 | 0.64 |
 
 ### BERT
 | Métrica | Train | Test | Dublin dataset |
@@ -30,8 +35,11 @@ The BERT model outperform significantly the LightGBM and Logistic Regression mod
 | recall | 0.88 | 0.87 | 0.71 |
 | precision | 0.86 | 0.83 | 0.69 |
 
+Regarding to the accuracy by category, the specific metrics for each category are summary in each notebook. There is no a substantial difference between categories using Logistic Regression and LightGBM. However, BERT has XXXXXXX
 
+To further understand models errors in the dublin dataset, a Name Entity Recognition model like BERT could be used. Extracting entities (persons, locations, companies) and analyzing model performance depending on entities in text.
 
+SHAP technique has been used to understand feature importance and correlations between feature and model predictions. Moreover, SHAP has been applied to understand individual predictions (focus in wrong predictions) and how each features has been used to generate individual output. Detailed analysis should be done to understand model errors and how to improve preprocessing and feature engineering. 
 
 > ## TODO
 > ### DATA
@@ -39,7 +47,8 @@ The BERT model outperform significantly the LightGBM and Logistic Regression mod
 2.   Analyze in detail model errors on dublin dataset
 3.   Find a better dataset to fine tune BERT
 4.   Create new variables from raw text (i.e. number of words, capital letter, emoticons, etc)
-5.   Improve data cleaning and preprocessing for Logistic Regression and LightGBM(stopwords, lematization)
+5.   Use NER model to extract entities and analyze model performance. Generate new features based in these entities extracted.
+6.   Improve data cleaning and preprocessing for Logistic Regression and LightGBM(stopwords, lematization)
 
 > ### MODEL
 1.   Try novel architectures like GPT3
