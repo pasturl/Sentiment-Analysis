@@ -11,6 +11,10 @@ The BERT model outperform significantly the LightGBM and Logistic Regression mod
 
 In the dublin dataset top TFIDF words are related with public institutions and city topics (government, dubcitycouncil, people, community, homeless). The top words are much more topic specific that in the sentiment140 dataset.
 
+![image info](./img/wordcloud_dublin.png)
+
+![image info](./img/wordcloud_sentiment.png)
+
 ### Logistic Regression
 | Métrica | Train | Test | Dublin dataset |
 | ----- | --- | ----- |  ----- |
@@ -39,7 +43,15 @@ Regarding to the accuracy by category, the specific metrics for each category ar
 
 To further understand models errors in the dublin dataset, a Name Entity Recognition model like BERT could be used. Extracting entities (persons, locations, companies) and analyzing model performance depending on entities in text.
 
-SHAP technique has been used to understand feature importance and correlations between feature and model predictions. Moreover, SHAP has been applied to understand individual predictions (focus in wrong predictions) and how each features has been used to generate individual output. Detailed analysis should be done to understand model errors and how to improve preprocessing and feature engineering. 
+SHAP technique has been used to understand feature importance and correlations between feature and model predictions. 
+## SHAP Logistic Regression
+![image info](./img/shap_lr.png)
+## SHAP LightGBM
+![image info](./img/shap_lightgbm.png)
+Moreover, SHAP has been applied to understand individual predictions (focus in wrong predictions) and how each features has been used to generate individual output. Detailed analysis should be done to understand model errors and how to improve preprocessing and feature engineering. For example, in image below we see a text fromo dublin dataset that it is label as positive sentiment but could be argue that it is negative or at least neutral.
+![image info](./img/individual_case.png)
+
+
 
 > ## TODO
 > ### DATA
