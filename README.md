@@ -4,7 +4,7 @@ Sentiment analysis using Machine Learning models (BERT, LightGBM, Logistic Regre
 # Summary
 
 ## Metrics
-The BERT model outperform significantly the LightGBM and Logistic Regression models (Accuracy of ~0.70 vs ~0.65). However, all models 
+The BERT model outperform significantly the LightGBM and Logistic Regression models (Accuracy of ~0.70 vs ~0.65). However, all models have worst performance in the dublin dataset compare to the test set in sentiment140 dataset. This indicate that text in dublin dataset is somehow different. Looking to the words with higher TFIDF value (notebook 00_Logistic regression)
 
 ### Logistic Regression
 | Métrica | Train | Test | Dublin dataset |
