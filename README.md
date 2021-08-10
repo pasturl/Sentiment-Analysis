@@ -33,10 +33,10 @@ To further understand models errors in the dublin dataset, a Name Entity Recogni
 ### BERT
 | Metric | Train | Test | Dublin dataset |
 | ----- | --- | ----- |  ----- |
-| Accuracy | 0.869 | 0.841 | 0.692 |
-| f1 | 0.87 | 0.85 | 0.70 |
-| recall | 0.88 | 0.87 | 0.71 |
-| precision | 0.86 | 0.83 | 0.69 |
+| Accuracy | 0.869 | 0.861 | 0.692 |
+| f1 | 0.87 | 0.86 | 0.67 |
+| recall | 0.88 | 0.86 | 0.62 |
+| precision | 0.86 | 0.87 | 0.72 |
 
 
 ## Model interpretability
