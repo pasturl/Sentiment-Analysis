@@ -10,7 +10,7 @@ The goal is predict sentiment of a dataset from the Dublin City Council. To do t
 ## Metrics
 The BERT model outperform significantly the LightGBM and Logistic Regression models (Accuracy of ~0.70 vs ~0.65). 
 However, all models performed worst  in the dublin dataset compare to the test set in sentiment140 dataset. This indicate that text in dublin dataset is somehow different. 
-Regarding to the accuracy by category, the specific metrics for each category are summary in each notebook. There is no a substantial difference between categories using Logistic Regression and LightGBM. However, BERT has XXXXXXX
+Regarding to the accuracy by category, the specific metrics for each category are summary in each notebook. There is no a substantial difference between categories using Logistic Regression and LightGBM. However, BERT has lower accuracy for Community and Culture (0.67) than the rest of categories.
 
 To further understand models errors in the dublin dataset, a Name Entity Recognition model like BERT could be used. Extracting entities (persons, locations, companies) and analyzing model performance depending on entities in text.
 
