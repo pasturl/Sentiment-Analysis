@@ -66,7 +66,7 @@ In the dublin dataset top TFIDF words are related with public institutions and c
 > ### DATA
 1.   In-depth Exploration Data Analysis to get a better understand of text.
 2.   Analyze in detail model errors on dublin dataset.
-3.   Find a better dataset to fine tune BERT.
+3.   Find a better dataset (more similar to Dublín dataset) to fine tune BERT.
 4.   Create new variables from raw text (i.e. number of words, capital letter, emoticons, etc).
 5.   Use NER model to extract entities and analyze model performance. Generate new features based in these entities extracted.
 6.   Improve data cleaning and preprocessing for Logistic Regression and LightGBM(stopwords, lematization).
